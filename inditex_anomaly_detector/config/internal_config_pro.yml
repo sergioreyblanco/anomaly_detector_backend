@@ -1,0 +1,25 @@
+internal_source:
+- name: test_source_2
+  type: snowflake
+  keyvault: inandekvtweu1pro002
+  user: A-snowflake-digitaldatapipeline-user
+  password: A-snowflake-digitaldatapipeline-pass
+  url: A-snowflake-A-urlshort
+  warehouse: DIGITALDATA_PIPELINE_WH
+  database: DIGITAL_DATA
+  schema: INANDE
+
+
+tables:
+  model_table:
+    name: DIGITAL_DATA.INANDE.MODELS_REGISTRY
+    schema: id varchar(50), source_name varchar(50), stream_name varchar(50),
+      model_name varchar(50), train_date timestamp
+  stream_tables:
+    name: DIGITAL_DATA.INANDE.STREAM
+  anomalies_table:
+    name: DIGITAL_DATA.INANDE.ANOMALIES
+    schema: ALERT_NAME VARCHAR(100), STREAM_NAME VARCHAR(100), CHANNEL_NAME VARCHAR(100),
+      MODEL_NAME VARCHAR(100), ALERT_TYPE VARCHAR(50), ANOMALY_GROUP INT,
+      ANOMALY_TIMESTAMP TIMESTAMP, NOW_TIMESTAMP TIMESTAMP, DIMENSIONS VARIANT, MEASURES VARIANT,
+      NOTIFICATION_TYPE VARCHAR(50), OTHER VARIANT

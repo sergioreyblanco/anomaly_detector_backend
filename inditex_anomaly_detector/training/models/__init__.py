@@ -1,0 +1,4 @@
+from inditex_anomaly_detector.training.models.model import Model
+#from inditex_anomaly_detector.training.models.modelAzureAnomalyDetector import AzureAnomalyDetectorModel
+from inditex_anomaly_detector.training.models.modelThreshold import ThresholdModel
+from inditex_anomaly_detector.training.models.modelZscore import ZscoreModel

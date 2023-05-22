@@ -1,0 +1,8 @@
+zcomcule-ml-commons
+pyyaml
+azure-ai-anomalydetector
+google-auth
+google-cloud-storage
+plotly
+kaleido
+matplotlib
